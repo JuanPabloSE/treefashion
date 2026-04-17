@@ -1,0 +1,15 @@
+{
+  "version": "0.2",
+  "language": "pt-BR,en",
+  "ignorePaths": [
+    "node_modules",
+    "assets/css",
+    "img",
+    "*.min.js"
+  ],
+  "words": [
+    "noopener",
+    "noreferrer",
+    "treefashion"
+  ]
+}
