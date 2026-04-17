@@ -1,0 +1,34 @@
+/* =============================================
+   KEYFRAMES GLOBAIS
+   Animações reutilizadas em múltiplas seções.
+   ============================================= */
+
+/* Pulsação — usado no hero badge e na seção urgência */
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: .5; transform: scale(1.4); }
+}
+
+/* Flutuação — camisas no hero */
+@keyframes float {
+  0%, 100% { transform: translate(-50%, -50%) translateY(0); }
+  50%       { transform: translate(-50%, -50%) translateY(-16px); }
+}
+
+/* Crescimento da barra de estoque */
+@keyframes stockgrow {
+  from { width: 0; }
+}
+
+/* =============================================
+   REDUCED MOTION — Acessibilidade
+   Desativa animações para quem prefere.
+   ============================================= */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

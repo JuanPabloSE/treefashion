@@ -1,0 +1,19 @@
+/* =============================================
+   ANNOUNCE BAR
+   Mobile: fonte compacta. Desktop via _responsive.
+   ============================================= */
+
+.announce-bar {
+  background: var(--surface);
+  padding: 9px 16px; /* mobile */
+  text-align: center;
+  font-size: .80rem;  /* mobile */
+  font-weight: 600;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 100;
+}
+
+.announce-bar span  { opacity: .85; margin: 0 12px; color: var(--green-light); }
+.announce-bar strong { opacity: 1; color: var(--green-light); }

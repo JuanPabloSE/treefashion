@@ -1,0 +1,133 @@
+/* =============================================
+   NAVEGACAO
+   Mobile: hamburger visivel, itens desktop ocultos.
+   Desktop (>= 768px): itens exibidos via _responsive.
+   ============================================= */
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--green);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+  transition: var(--trans);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px; /* mobile */
+}
+
+/* Logo */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.nav-logo img {
+  height: 190px; /* mobile */
+  width: auto;
+  display: flex;
+  object-fit: contain;
+  margin-top: 15px;
+}
+.nav-logo span { color: var(--green-light); }
+.nav-logo .dot { color: var(--gold); }
+
+/* Links — ocultos no mobile */
+.nav-links {
+  display: none;
+  align-items: center;
+  gap: 32px;
+}
+.nav-links a {
+  font-size: .82rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: red;
+  transition: var(--trans);
+  position: relative;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--green-light);
+  transition: width .2s ease;
+}
+.nav-links a:hover         { color: var(--white); }
+.nav-links a:hover::after  { width: 100%; }
+
+/* Acoes */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* CTA desktop — oculto no mobile */
+.nav-cta {
+  display: none;
+  background: var(--gold);
+  color: #000;
+  font-weight: 700;
+  font-size: .78rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: var(--radius);
+  transition: var(--trans);
+  white-space: nowrap;
+}
+.nav-cta:hover {
+  background: var(--gold-light);
+  box-shadow: 0 4px 16px rgba(217, 119, 6, .35);
+}
+
+/* Instagram desktop — oculto no mobile */
+.nav-ig {
+  display: none;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: var(--trans);
+  color: red;
+}
+.nav-ig:hover { border-color: var(--gold); color: var(--gold); }
+
+/* Hamburger — visivel no mobile */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  padding: 0;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: var(--radius);
+  transition: var(--trans);
+  position: relative;
+  z-index: 10000;
+}
+.hamburger:hover { background: rgba(255, 255, 255, .06); }
+.hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: var(--trans);
+}

@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir \"c:\\\\ProjetosFreeLancer\\\\treefashion\")",
+      "Bash(cmd /c dir \"c:\\\\ProjetosFreeLancer\\\\treefashion\")",
+      "Bash(cmd /c \"dir /b C:\\\\ProjetosFreeLancer\\\\treefashion\")",
+      "Bash(cmd /c \"type C:\\\\Users\\\\juanj\\\\.claude\\\\projects\\\\c--ProjetosFreeLancer-treefashion\\\\memory\\\\MEMORY.md\")",
+      "Bash(python3 \"C:/Users/juanj/.claude/plugins/cache/ui-ux-pro-max-skill/ui-ux-pro-max/2.5.0/.claude/skills/ui-ux-pro-max/scripts/search.py\" \"football soccer shirts ecommerce sports fashion bold\" --design-system -p \"Tree Fashion\" -f markdown)",
+      "Bash(cmd /c \"python \\\\\"C:/Users/juanj/.claude/plugins/cache/ui-ux-pro-max-skill/ui-ux-pro-max/2.5.0/.claude/skills/ui-ux-pro-max/scripts/search.py\\\\\" \\\\\"football soccer shirts ecommerce sports fashion bold\\\\\" --design-system -p \\\\\"Tree Fashion\\\\\" -f markdown\")",
+      "Bash(where python:*)",
+      "Bash(\"C:\\\\Users\\\\juanj\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python314\\\\python.exe\" \"C:/Users/juanj/.claude/plugins/cache/ui-ux-pro-max-skill/ui-ux-pro-max/2.5.0/.claude/skills/ui-ux-pro-max/scripts/search.py\" \"football soccer shirts ecommerce sports fashion bold energetic\" --design-system -p \"Tree Fashion\" -f markdown)",
+      "Bash(\"C:\\\\Users\\\\juanj\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python314\\\\python.exe\" \"C:/Users/juanj/.claude/plugins/cache/ui-ux-pro-max-skill/ui-ux-pro-max/2.5.0/src/ui-ux-pro-max/scripts/search.py\" \"football soccer shirts ecommerce sports fashion bold energetic\" --design-system -p \"Tree Fashion\" -f markdown)",
+      "Bash(\"C:\\\\Users\\\\juanj\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python314\\\\python.exe\" \"C:/Users/juanj/.claude/plugins/cache/ui-ux-pro-max-skill/ui-ux-pro-max/2.5.0/src/ui-ux-pro-max/scripts/search.py\" \"ecommerce sports high-conversion dark bold editorial\" --domain color -n 3)",
+      "Bash(\"C:\\\\Users\\\\juanj\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python314\\\\python.exe\" \"C:/Users/juanj/.claude/plugins/cache/ui-ux-pro-max-skill/ui-ux-pro-max/2.5.0/src/ui-ux-pro-max/scripts/search.py\" \"scarcity urgency trust social-proof conversion\" --domain landing -n 3)",
+      "WebFetch(domain:juanpablose.github.io)",
+      "Bash(curl -s \"https://juanpablose.github.io/SlimCenterAlagoinhas/\")",
+      "Bash(curl -s \"https://juanpablose.github.io/SlimCenterAlagoinhas/css/style.css\")",
+      "Bash(python3 \"C:\\\\Users\\\\juanj\\\\.claude\\\\plugins\\\\cache\\\\ui-ux-pro-max-skill\\\\ui-ux-pro-max\\\\2.5.0\\\\.claude\\\\skills\\\\ui-ux-pro-max\\\\scripts\\\\search.py\" \"football jersey ecommerce landing dark sports brazil\" --design-system -p \"Tree Fashion\")",
+      "Read(//c/Users/juanj/.claude/plugins/cache/ui-ux-pro-max-skill/ui-ux-pro-max/2.5.0/.claude/skills/ui-ux-pro-max/**)",
+      "Bash(python scripts/search.py \"fashion ecommerce sports jersey dark luxury\" --design-system -p \"TreeFashion\" -f markdown)",
+      "Bash(python3 scripts/search.py \"fashion ecommerce sports jersey dark luxury\" --design-system -p \"TreeFashion\" -f markdown)",
+      "Bash(python \"C:\\\\Users\\\\juanj\\\\.claude\\\\plugins\\\\cache\\\\ui-ux-pro-max-skill\\\\ui-ux-pro-max\\\\2.5.0\\\\.claude\\\\skills\\\\ui-ux-pro-max\\\\scripts\\\\search.py\" \"fashion ecommerce sports jersey dark luxury\" --design-system -p \"TreeFashion\" -f markdown)",
+      "Bash(python \"C:\\\\Users\\\\juanj\\\\.claude\\\\plugins\\\\cache\\\\ui-ux-pro-max-skill\\\\ui-ux-pro-max\\\\2.5.0\\\\src\\\\ui-ux-pro-max\\\\scripts\\\\search.py\" \"fashion ecommerce sports jersey dark luxury\" --design-system -p \"TreeFashion\" -f markdown)",
+      "Bash(node -e ':*)"
+    ]
+  }
+}

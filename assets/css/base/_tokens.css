@@ -1,0 +1,43 @@
+/* =============================================
+   DESIGN TOKENS — CSS Custom Properties
+   Fonte da verdade para cores, tipografia,
+   espaçamento e efeitos visuais.
+   ============================================= */
+
+:root {
+  /* Backgrounds */
+  --bg:          #0A0A0A;
+  --surface:     #141414;
+  --surface2:    #1E1E1E;
+
+  /* Bordas */
+  --border:      #2A2A2A;
+
+  /* Paleta de marca */
+  --green:       #16A34A;
+  --green-light: #22C55E;
+  --gold:        #D97706;
+  --gold-light:  #F59E0B;
+  --red:         #DC2626;
+  --white:       #FFFFFF;
+
+  /* Escala de cinza */
+  --gray-1:      #F4F4F5;
+  --gray-2:      #A1A1AA;
+  --gray-3:      #52525B;
+
+  /* Tipografia */
+  --font-head:   'Russo One', sans-serif;
+  --font-body:   'Chakra Petch', sans-serif;
+
+  /* Bordas arredondadas */
+  --radius:      8px;
+  --radius-lg:   16px;
+
+  /* Sombras */
+  --shadow:      0 4px 24px rgba(0, 0, 0, .5);
+  --shadow-lg:   0 8px 48px rgba(0, 0, 0, .7);
+
+  /* Transição padrão */
+  --trans:       all .2s ease;
+}

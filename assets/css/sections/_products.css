@@ -1,0 +1,202 @@
+/* =============================================
+   PRODUCTS — MOBILE FIRST
+   Base = 2 colunas compacto. 3 colunas via >= 1024px.
+   ============================================= */
+
+.products-section {
+  padding: clamp(48px, 8vw, 96px) 0;
+  background: var(--bg);
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* mobile: 2 colunas */
+  gap: 10px;
+}
+
+/* ---- Card ---- */
+.product-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color .25s ease, transform .25s ease, box-shadow .25s ease;
+}
+.product-card:hover {
+  border-color: rgba(217, 119, 6, .55);
+  transform: translateY(-5px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, .5);
+}
+
+/* ---- Wrapper imagem ---- */
+.product-img-wrap {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  background: var(--surface2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* ---- Foto ---- */
+.product-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform .4s ease;
+}
+.product-card:hover .product-photo { transform: scale(1.06); }
+
+/* ---- Visual SVG ---- */
+.shirt-card-visual {
+  width: 52%;
+  max-width: 136px;
+  transition: transform .4s ease;
+}
+.product-card:hover .shirt-card-visual { transform: scale(1.1) translateY(-6px); }
+.shirt-card-visual svg {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 10px 28px rgba(0, 0, 0, .55));
+}
+
+/* ---- Badges ---- */
+.product-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: .6rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 999px;
+  line-height: 1.4;
+  pointer-events: none;
+}
+.badge-hot  { background: var(--gold);    color: #000; }
+.badge-new  { background: var(--green);   color: #fff; }
+.badge-off  { background: var(--red);     color: #fff; }
+.badge-last {
+  background: var(--surface2);
+  color: var(--gray-1);
+  border: 1px solid var(--border);
+}
+
+/* ---- Favoritar ---- */
+.product-fav {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(10, 10, 10, .75);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-2);
+  transition: var(--trans);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+.product-fav:hover {
+  color: var(--red);
+  border-color: var(--red);
+  background: rgba(220, 38, 38, .15);
+}
+
+/* ---- Informacoes ---- */
+.product-info {
+  padding: 10px 10px 6px; /* mobile */
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.product-team {
+  font-size: .68rem; /* mobile */
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--green-light);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.product-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .75rem; /* mobile */
+  color: var(--white);
+  line-height: 1.35;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* ---- Rodape ---- */
+.product-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 10px; /* mobile */
+  border-top: 1px solid var(--border);
+}
+
+.product-whatsapp-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: .62rem; /* mobile */
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: #22C55E;
+  background: rgba(34, 197, 94, .1);
+  border: 1px solid rgba(34, 197, 94, .3);
+  padding: 0 8px;
+  min-height: 44px; /* touch target */
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background .2s ease, border-color .2s ease, color .2s ease;
+  flex: 1;
+  justify-content: center;
+}
+.product-whatsapp-cta:hover,
+.product-card:hover .product-whatsapp-cta {
+  background: rgba(34, 197, 94, .18);
+  border-color: rgba(34, 197, 94, .55);
+  color: #4ade80;
+}
+
+/* ---- Botao adicionar ---- */
+.product-add {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: var(--radius);
+  background: var(--gold);
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--trans);
+}
+.product-add:hover {
+  background: var(--gold-light);
+  transform: scale(1.08);
+  box-shadow: 0 4px 16px rgba(217, 119, 6, .4);
+}
+.product-add svg {
+  width: 14px; /* mobile */
+  height: 14px;
+}

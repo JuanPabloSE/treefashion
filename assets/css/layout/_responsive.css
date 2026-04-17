@@ -1,0 +1,449 @@
+/* =============================================
+   RESPONSIVIDADE — MOBILE FIRST
+   Abordagem fluida com clamp() para padding.
+   Container usa clamp(12px, 4vw, 20px) — sem
+   overrides de padding por breakpoint.
+   Breakpoints: 1024px | 768px | 480px
+   ============================================= */
+
+/* ============================================= */
+/* ---- Tablet (≤ 1024px) ---- */
+/* ============================================= */
+@media (max-width: 1024px) {
+
+  /* Grids gerais */
+  .products-grid      { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .stats-grid         { grid-template-columns: repeat(2, 1fr); }
+  .why-grid           { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid        { grid-template-columns: repeat(2, 1fr); gap: 36px; }
+  .ig-grid            { grid-template-columns: repeat(3, 1fr); }
+
+  /* Nav */
+  .nav-links          { gap: 20px; }
+
+  /* Hero */
+  .hero-grid          { gap: 28px; }
+  .hcp-images         { height: 360px; }
+  .hero-collection-panel { padding: 20px 18px 18px; gap: 16px; }
+
+  /* Urgência */
+  .urgency-inner      { gap: 48px; }
+
+}
+
+/* ============================================= */
+/* ---- Mobile (≤ 768px) ---- */
+/* ============================================= */
+@media (max-width: 768px) {
+
+  /* ---- Announce bar ---- */
+  .announce-bar       { font-size: .65rem; letter-spacing: .05em; padding: 9px 16px; }
+
+  /* ---- Nav: esconde desktop, mostra hamburger ---- */
+  .nav-inner          { height: 60px; }
+  .nav-links          { display: none; }
+  .nav-cta            { display: none; }
+  .nav-ig             { display: none; }
+  .hamburger          { display: flex; }
+  .nav-logo img       { height: 44px; }
+
+  /* ---- Section headers ---- */
+  .section-header     { flex-direction: column; align-items: flex-start;
+                        gap: 12px; margin-bottom: 32px; }
+  .section-title      { font-size: clamp(1.55rem, 5vw, 2.2rem); }
+
+  /* ---- Tipografia ---- */
+  h1                  { font-size: 2rem; line-height: 1.2; }
+  p                   { font-size: .95rem; }
+
+  /* ---- Hero: coluna única, ordem: conteúdo → avaliação → coleção ---- */
+  .hero               { min-height: 100vh; min-height: 100svh; padding: 40px 0 0; }
+  .hero-grid          { grid-template-columns: 1fr;
+                        grid-template-areas: none;
+                        gap: 24px; text-align: center; }
+  .hero-content       { grid-area: auto; order: 1; }
+  .hero-social-proof  { grid-area: auto; order: 2;
+                        justify-content: center; padding-bottom: 4px; }
+  .hero-visual        { grid-area: auto; order: 3;
+                        width: calc(100% + 2 * clamp(12px, 4vdh, 20px));
+                        margin-left: calc(-1 * clamp(12px, 4vdh, 20px));
+                        margin-right: calc(-1 * clamp(12px, 4, 20px));
+                        align-self: auto; }
+
+  .hero h1            { font-size: clamp(2.1rem, 7.5vw, 3.2rem); line-height: 1.05; }
+  .hero p             { font-size: .92rem; max-width: 100%; margin-bottom: 20px; }
+  .hero-eyebrow       { margin-bottom: 14px; justify-content: center; }
+  .hero-actions       { flex-direction: column; gap: 10px; margin-bottom: 0;
+                        align-items: center; }
+  .hero-actions .btn  { width: 100%; justify-content: center; }
+  .hero-stat          { font-size: .78rem; }
+
+  /* Painel coleção Brasil */
+  .hero-collection-panel {
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    padding: 24px 16px 32px;
+    gap: 16px;
+  }
+  .hcp-brazil         { font-size: clamp(1.4rem, 6vw, 2rem); }
+  .hcp-cup            { font-size: .75rem; }
+
+  /* Copa: grid fluido — imagem principal + duas secundárias em linha */
+  .hcp-images         { grid-template-columns: 1fr; height: auto; gap: 8px; }
+  .hcp-slot-main      { height: auto; aspect-ratio: 4/3; }
+  .hcp-slots-row      { display: flex; flex-direction: row; height: auto; }
+  .hcp-slots-row .hcp-slot { aspect-ratio: 4/3; }
+
+  .hcp-cta-btn        { width: 100%; justify-content: center; }
+
+  /* ---- Trust bar ---- */
+  .trust-bar-inner    { flex-direction: column; }
+  .trust-item         { border-right: none; border-bottom: 1px solid var(--border);
+                        width: 100%; min-width: 0; justify-content: flex-start; padding: 16px 20px; }
+  .trust-item:last-child { border-bottom: none; }
+
+  /* ---- Stats: 2×2 ---- */
+  .stats-grid         { grid-template-columns: repeat(2, 1fr); }
+
+  /* ---- Products: 2 colunas ---- */
+  .products-grid          { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .product-info           { padding: 12px 12px 8px; gap: 3px; }
+  .product-name           { font-size: .8rem; overflow-wrap: break-word; word-break: break-word; }
+  .product-team           { font-size: .68rem; letter-spacing: .08em; }
+  .product-footer         { padding: 10px 12px; gap: 6px; }
+  .product-whatsapp-cta   { font-size: .64rem; padding: 5px 9px;
+                            letter-spacing: .06em; gap: 4px; min-height: 44px; }
+  .product-add            { width: 44px; height: 44px; flex-shrink: 0; }
+  .product-add svg        { width: 14px; height: 14px; }
+
+  /* ---- Urgência: 1 coluna ---- */
+  .urgency-inner      { grid-template-columns: 1fr; gap: 24px; }
+  .urgency-sub        { max-width: 100%; font-size: .9rem; }
+  .urgency-products   { display: flex; grid-row: auto; }
+  .urgency-btn-cta    { width: 100%; justify-content: center; padding: 15px 24px; font-size: .9rem; }
+  .stock-bar-wrap     { margin-bottom: 0; }
+  .countdown-wrap     { gap: 10px; }
+  .countdown-block    { padding: 14px 18px; min-width: 72px; }
+
+  /* ---- Why: 2 por linha ---- */
+  .why-grid           { grid-template-columns: repeat(2, 1fr); }
+  .why-card           { padding: 20px 16px; }
+
+  /* ---- Testimoniais: stack vertical (tablet) ---- */
+  .testimonials-grid  { gap: 14px; }
+  .testimonial-card   { padding: 22px 24px; }
+
+  /* ---- Instagram ---- */
+  .ig-grid            { grid-template-columns: repeat(3, 1fr); }
+
+  /* ---- CTA ---- */
+  .cta-inner          { padding: 40px 20px; }
+  .cta-title          { font-size: clamp(1.55rem, 5vw, 2.2rem); }
+  .cta-sub            { font-size: .88rem; margin-bottom: 24px; }
+  .form-row           { flex-direction: column; gap: 10px; }
+  .form-input         { width: 100%; font-size: 16px; }
+  .whatsapp-btn       { width: 100%; justify-content: center; padding: 15px 24px; }
+
+  /* ---- Footer ---- */
+  .footer-grid        { grid-template-columns: 1fr; gap: 32px; }
+  .footer-brand       { text-align: left; }
+  .footer-brand p     { max-width: 100%; }
+  .footer-bottom      { justify-content: center; align-items: center; }
+  .footer-payments    { flex-wrap: wrap; gap: 6px; }
+  .footer-col h4      { margin-bottom: 16px; }
+}
+
+/* ============================================= */
+/* ---- Desktop (≥ 1025px) ---- */
+/* Base das seções = mobile-first. Aqui         */
+/* restauramos e melhoramos o layout desktop.   */
+/* ============================================= */
+
+@media (min-width: 1025px) {
+
+  /* ---- Announce bar ---- */
+  .announce-bar     { font-size: .82rem; letter-spacing: .08em; padding: 10px 0; }
+
+  /* ---- Nav ---- */
+  .nav-inner        { height: 72px; }
+  .nav-logo img     { height: 150px; margin-top: 7px; }
+  .nav-links        { display: flex; gap: 36px; }
+  .nav-links a      { font-size: .85rem; }
+  .nav-cta          { display: block; padding: 12px 24px; font-size: .8rem; }
+  .nav-ig           { display: flex; }
+  .hamburger        { display: none; }
+
+  /* ---- Section headers ---- */
+  .section-header   { flex-direction: row; align-items: flex-end;
+                      gap: 16px; margin-bottom: 56px; }
+  .section-title    { font-size: clamp(2.2rem, 3vw, 3.2rem); }
+
+  /* ---- Hero ---- */
+  .hero             { padding: clamp(72px, 6vw, 84px) 0 0;
+                      min-height: 100vh; overflow: hidden; }
+  .hero-grid        { grid-template-columns: 1fr 1.65fr;
+                      grid-template-areas: "content visual"
+                                           "social  visual";
+                      gap: 40px; text-align: left; align-items: start; }
+  .hero-content     { grid-area: content; order: initial; max-width: 520px; }
+  .hero-social-proof { grid-area: social;  order: initial; align-self: end;
+                       justify-content: flex-start; gap: 28px;
+                       flex-direction: row; padding-bottom: 12px; }
+  .hero-visual      { grid-area: visual;  order: initial; align-self: stretch;
+                      width: 100%; margin-left: 0; margin-right: 0; }
+
+  .hero h1          { font-size: clamp(2.8rem, 3.5vw, 4.5rem); line-height: .91; }
+  .hero h1 .line-green,
+  .hero h1 .line-gold { display: inline; }
+  .hero p           { font-size: .95rem; max-width: 480px; margin-bottom: 24px;
+                      line-height: 1.7; }
+  .hero-eyebrow     { justify-content: flex-start; margin-bottom: 16px; }
+  .hero-badge       { font-size: .75rem; padding: 8px 16px; gap: 8px; }
+  .hero-badge .pulse { width: 7px; height: 7px; }
+  .hero-actions     { flex-direction: row; gap: 16px; align-items: center; }
+  .hero-actions .btn { width: auto; padding: 12px 28px; font-size: .88rem;
+                       letter-spacing: .08em; }
+  .hero-avatars     { display: flex; }
+  .hero-avatars .av { width: 36px; height: 36px; font-size: .74rem; }
+  .hero-stat        { font-size: .85rem; }
+  .hero-stat strong { font-size: 1rem; display: block; margin-bottom: 4px; }
+
+  .hero-collection-panel {
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(255, 255, 255, .14);
+    padding: 28px 24px 24px;
+    gap: 16px;
+    box-shadow: 0 56px 140px rgba(0, 0, 0, .85),
+                inset 0 1px 0 rgba(255, 255, 255, .12);
+  }
+  .hcp-eyebrow      { font-size: .7rem; margin-bottom: 10px; }
+  .hcp-brazil       { font-size: clamp(2.5rem, 3.5vw, 4.5rem); }
+  .hcp-cup          { font-size: clamp(.9rem, 1.2vw, 1.4rem); }
+  .hcp-images       { grid-template-columns: 3fr 2fr; height: 480px; }
+  .hcp-slot-main    { height: 100%; aspect-ratio: unset; }
+  .hcp-slots-row    { flex-direction: column; height: 100%; }
+  .hcp-slots-row .hcp-slot { aspect-ratio: unset; flex: 1; }
+  .hcp-cta-btn      { width: auto; justify-content: flex-start;
+                      font-size: .75rem; padding: 12px 24px; }
+
+  /* ---- Trust bar: layout definido em _trust-bar.css @media (min-width: 1025px) ---- */
+  .trust-text strong { font-size: 1rem; margin-bottom: 4px; }
+  .trust-text span  { font-size: .82rem; }
+
+  /* ---- Stats: 4 colunas ---- */
+  .stats-grid       { grid-template-columns: repeat(4, 1fr); }
+  .stat-card        { padding: clamp(40px, 4.5vw, 60px) clamp(20px, 2.5vw, 40px); }
+
+  /* ---- Products: 3 colunas x 2 linhas ---- */
+  .products-grid    { grid-template-columns: repeat(3, 1fr); gap: 28px; }
+  .product-img-wrap { aspect-ratio: 3 / 4; }
+  .product-info     { padding: 20px 20px 12px; gap: 6px; }
+  .product-name     { font-size: 1rem; line-height: 1.3; }
+  .product-team     { font-size: .72rem; }
+  .product-footer   { padding: 14px 20px; gap: 12px; }
+  .product-whatsapp-cta { font-size: .7rem; padding: 0 16px; min-height: 44px; }
+  .product-add      { width: 48px; height: 48px; }
+  .product-add svg  { width: 18px; height: 18px; }
+
+  /* ---- Urgência ---- */
+  .urgency-inner    { grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
+  .urgency-products { grid-row: 1 / span 2; flex-direction: column; }
+  .urgency-btn-cta  { grid-column: 1; grid-row: auto;
+                      width: auto; padding: 18px 36px; font-size: .95rem; }
+  .urgency-title    { font-size: clamp(2.6rem, 3.2vw, 3.8rem); line-height: 1.05; }
+  .urgency-sub      { font-size: 1rem; max-width: 480px; }
+  .countdown-wrap   { gap: 16px; }
+  .countdown-block  { padding: 20px 24px; min-width: 100px; max-width: 120px; flex: initial; }
+  .countdown-num    { font-size: 2.8rem; }
+  .countdown-lbl    { font-size: .68rem; margin-top: 6px; }
+  .urgency-card     { padding: 20px; gap: 20px; }
+  .urgency-card-img { width: 68px; height: 68px; }
+  .urgency-card-name { font-size: .95rem; }
+
+  /* ---- Why: 3 colunas ---- */
+  .why-grid         { grid-template-columns: repeat(3, 1fr); }
+  .why-card         { padding: 40px 32px; }
+  .why-icon         { width: 52px; height: 52px; margin-bottom: 20px; }
+  .why-card h3      { font-size: 1.05rem; margin-bottom: 12px; }
+  .why-card p       { font-size: .88rem; }
+
+  /* ---- Testimonials: stack vertical (desktop) ---- */
+  /* Layout definido em _testimonials.css @media (min-width: 1025px) */
+
+  /* ---- Instagram ---- */
+  .instagram-section { padding: clamp(40px, 5vw, 64px) 0; }
+  .ig-header        { margin-bottom: clamp(16px, 2.5vw, 28px); gap: 10px; }
+  .ig-header .section-title { font-size: clamp(1.6rem, 2.2vw, 2.2rem); }
+  .ig-cta-wrap      { margin-top: 20px; }
+  .ig-handle        { font-size: .8rem; padding: 7px 16px; }
+
+  /* ---- CTA ---- */
+  .cta-inner        { padding: 72px 48px; }
+  .cta-title        { font-size: clamp(2.2rem, 3vw, 3.5rem); }
+  .cta-sub          { font-size: .95rem; max-width: 480px; margin-bottom: 32px; }
+  .form-row         { flex-direction: row; }
+  .form-input       { width: auto; font-size: .92rem; }
+  .whatsapp-btn     { width: auto; padding: 15px 32px; }
+
+  /* ---- Footer: compacto — brand + 3 colunas lado a lado ---- */
+  .footer           { padding-top: 36px; }
+  .footer-grid      { grid-template-columns: 1fr 1fr; gap: 48px;
+                      padding-bottom: 20px; align-items: start; }
+  .footer-brand p   { max-width: 280px; font-size: .82rem; margin-top: -60px;
+                      line-height: 1.65; }
+  .footer-logo      { font-size: 1.6rem; }
+  .footer-social    { margin-top: 14px; gap: 6px; }
+  .footer-social a  { width: 36px; height: 36px; }
+
+  /* 3 colunas de links em linha, lado a lado */
+  .footer-links     { display: flex; gap: 40px; align-items: flex-start; }
+  .footer-links .footer-col { flex: 1; min-width: 0; }
+
+  .footer-col h4    { font-size: .66rem; margin-bottom: 12px; }
+  .footer-col ul    { gap: 9px; }
+  .footer-col ul li a { font-size: .82rem; }
+  .footer-bottom    { justify-content: center; align-items: center;
+                      padding: 12px 0; }
+  .footer-bottom > span { font-size: .74rem; }
+  .footer-payments  { flex-wrap: nowrap; gap: 5px; }
+  .payment-badge    { font-size: .57rem; padding: 3px 6px; }
+
+}
+
+/* ============================================= */
+/* ---- Wide Desktop (≥ 1280px) ---- */
+/* ============================================= */
+@media (min-width: 1280px) {
+
+  /* ---- Sections: mais respiro vertical ---- */
+  .products-section,
+  .why-section,
+  .instagram-section,
+  .cta-section,
+  .testimonials-section,
+  .urgency-section  { padding: clamp(80px, 8vw, 120px) 0; }
+
+  /* ---- Section headers ---- */
+  .section-header   { margin-bottom: 64px; }
+  .section-title    { font-size: clamp(2.4rem, 3vw, 3.6rem); }
+
+  /* ---- Hero ---- */
+  .hero             { padding: clamp(76px, 6vw, 88px) 0 0; }
+  .hero-grid        { gap: 48px; grid-template-columns: 1fr 1.85fr; }
+  .hero h1          { font-size: clamp(3.2rem, 4.5vw, 5.5rem); line-height: .90; }
+  .hero p           { font-size: 1rem; max-width: 520px; margin-bottom: 28px; }
+  .hero-actions .btn { padding: 12px 32px; font-size: .9rem; }
+  .hero-stat        { font-size: .88rem; }
+  .hero-stat strong { font-size: 1.05rem; }
+  .hcp-images       { height: 560px; }
+  .hcp-brazil       { font-size: clamp(3rem, 4vw, 5rem); }
+  .hcp-cup          { font-size: clamp(1rem, 1.4vw, 1.6rem); }
+  .hero-collection-panel { padding: 32px 28px 28px; gap: 20px; min-width: unset;
+                            margin-left: 0; }
+  .hcp-cta-btn      { font-size: .78rem; padding: 12px 28px;}
+  .hero-social-proof { gap: 32px; }
+
+  /* ---- Stats ---- */
+  .stat-card        { padding: clamp(48px, 5vw, 72px) clamp(28px, 3vw, 48px); }
+
+  /* ---- Trust bar ---- */
+  .trust-item       { padding: 36px 32px; }
+
+  /* ---- Products ---- */
+  .products-grid    { gap: 32px; }
+  .product-info     { padding: 24px 24px 16px; }
+  .product-name     { font-size: 1.02rem; }
+  .product-footer   { padding: 18px 24px; }
+
+  /* ---- Urgência ---- */
+  .countdown-block  { min-width: 110px; max-width: 130px; padding: 24px 28px; }
+  .countdown-num    { font-size: 3.2rem; }
+  .urgency-card-img { width: 76px; height: 76px; }
+
+  /* ---- Why ---- */
+  .why-card         { padding: 48px 40px; }
+  .why-icon         { width: 56px; height: 56px; }
+
+  /* ---- Testimonials ---- */
+  .testimonials-grid { gap: 32px; }
+  .testimonial-card  { padding: 36px; }
+
+  /* ---- CTA ---- */
+  .cta-inner        { padding: 88px 64px; }
+
+  /* ---- Footer ---- */
+  .footer-grid      { gap: 72px; }
+
+}
+
+/* ============================================= */
+/* ---- Mobile pequeno (≤ 480px) ---- */
+/* ============================================= */
+@media (max-width: 480px) {
+
+  /* ---- Nav ---- */
+  .nav-inner          { height: 56px; }
+  .nav-logo img       { height: 120px; margin-top: 8px; }
+
+  /* ---- Hero ---- */
+  .hero               { padding: 40px 0 0; }
+  .hero h1            { font-size: clamp(1.7rem, 9vw, 2.8rem); }
+  .hero-badge         { font-size: .6rem; padding: 5px 11px; }
+  .hero p             { font-size: .88rem; margin-bottom: 20px; }
+  .hero-social-proof  { flex-direction: column; align-items: center; gap: 8px;
+                        margin-bottom: 0; }
+  .hero-avatars       { display: none; }
+  .hero-stat          { font-size: .75rem; }
+  .hero-collection-panel { padding: 16px 14px 24px; }
+
+  /* ---- Stats ---- */
+  .stats-grid         { grid-template-columns: 1fr 1fr; }
+  .stat-label         { font-size: .7rem; }
+
+  /* ---- Products: manter 2 colunas ---- */
+  .products-grid          { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .product-info           { padding: 10px 10px 6px; gap: 2px; }
+  .product-name           { font-size: .75rem; }
+  .product-team           { font-size: .72rem; }
+  .product-footer         { padding: 8px 10px; gap: 5px; }
+  .product-whatsapp-cta   { font-size: .68rem; padding: 5px 8px;
+                            letter-spacing: .04em; gap: 3px; min-height: 44px; }
+  .product-add            { width: 44px; height: 44px; }
+  .product-add svg        { width: 13px; height: 13px; }
+
+  /* ---- Urgência ---- */
+  .countdown-wrap     { gap: 6px; justify-content: flex-start; }
+  .countdown-block    { padding: 12px; min-width: 0; flex: 1; max-width: 80px; }
+  .countdown-num      { font-size: 1.7rem; }
+  .countdown-lbl      { font-size: .65rem; }
+
+  /* ---- Why: manter 2 colunas ---- */
+  .why-card           { padding: 16px 12px; }
+  .why-icon           { width: 38px; height: 38px; margin-bottom: 12px; }
+
+  /* ---- Testimoniais ---- */
+  .testimonials-grid  { gap: 12px; }
+  .testimonial-card   { min-width: 88vw; max-width: none; padding: 20px; gap: 12px; }
+  .testimonial-text   { font-size: .85rem; line-height: 1.7; }
+  .testimonial-author { padding-top: 14px; }
+
+  /* ---- Section headers ---- */
+  .section-header     { margin-bottom: 20px; }
+  .section-title      { font-size: clamp(1.45rem, 6vw, 1.9rem); }
+
+  /* ---- Instagram ---- */
+  .ig-grid            { grid-template-columns: repeat(2, 1fr); }
+
+  /* ---- CTA ---- */
+  .cta-inner          { padding: 32px 14px; }
+  .cta-title          { font-size: clamp(1.4rem, 6.5vw, 1.85rem); }
+  .cta-sub            { font-size: .85rem; }
+
+  /* ---- Footer ---- */
+  .footer-grid        { grid-template-columns: 1fr; gap: 24px; }
+  .footer-bottom      { gap: 8px; padding: 20px 0; }
+  .footer-payments    { gap: 5px; }
+  .payment-badge      { font-size: .6rem; padding: 4px 7px; }
+}

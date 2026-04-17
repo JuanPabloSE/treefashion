@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tree Fashion | Camisas de Futebol Originais</title>
+<meta name="description" content="Camisas de futebol dos seus clubes e seleções favoritos. Qualidade premium, entrega rápida. Seja do time.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Russo+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="announce-bar">
+  <span><strong>APROVEITE E COMPRE JÁ SUA CAMISA</strong></span>
+</div>
+
+<!-- NAV -->
+<nav class="nav" id="mainNav">
+  <div class="container nav-inner">
+    <a href="#" class="nav-logo">
+  <img src="../img/logo.png" alt="Tree Fashion">
+</a>
+    <ul class="nav-links">
+      <li><a href="#products"><strong>Camisas</strong></a></li>
+      <li><a href="#urgency"><strong>Promoções</strong></a></li>
+      <li><a href="#about"><strong>Sobre</strong></a></li>
+      <li><a href="#testimonials"><strong>Avaliações</strong></a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="https://www.instagram.com/treefashion16/" target="_blank" rel="noopener" class="nav-ig" aria-label="Instagram Tree Fashion">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+      <a href="https://wa.me/55" class="nav-cta" aria-label="Comprar via WhatsApp">Comprar Agora</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menu mobile">
+  <button class="mobile-close" id="mobileClose" aria-label="Fechar menu">✕</button>
+  <a href="#products" onclick="closeMobile()">Camisas</a>
+  <a href="#urgency" onclick="closeMobile()">Promoções</a>
+  <a href="#about" onclick="closeMobile()">Sobre</a>
+  <a href="#testimonials" onclick="closeMobile()">Avaliações</a>
+  <a href="https://wa.me/55" class="btn btn-green">Comprar via WhatsApp</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid-lines"></div>
+  <div class="container hero-grid">
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <div class="hero-badge">
+          <span class="pulse"></span>
+          Novos modelos disponíveis
+        </div>
+      </div>
+      <h1>
+        Vista a<br>
+        <span class="line-green">Paixão.</span><br>
+        Use o <span class="line-gold">Estilo.</span>
+      </h1>
+      <p>
+        As camisas dos seus clubes e seleções favoritos com qualidade premium.
+        Mais de 2.000 clientes que já vestem o amor pelo futebol.
+      </p>
+      <div class="hero-actions">
+        <a href="#products" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          Ver Coleção
+        </a>
+        <a href="https://www.instagram.com/treefashion16/" target="_blank" rel="noopener" class="btn btn-outline">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          @treefashion16
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-social-proof">
+      <div class="hero-avatars">
+        <div class="av av-1" aria-hidden="true">JL</div>
+        <div class="av av-2" aria-hidden="true">RS</div>
+        <div class="av av-3" aria-hidden="true">MF</div>
+        <div class="av av-4" aria-hidden="true">TC</div>
+      </div>
+      <div class="hero-stat">
+        <strong>+2.000</strong><br>Clientes satisfeitos
+      </div>
+      <div class="hero-stat">
+        <strong>⭐ 4.9</strong><br>Avaliação média
+      </div>
+    </div>
+
+    <!-- Hero Visual: Coleção Brasil Copa do Mundo -->
+    <div class="hero-visual" aria-label="Coleção Brasil Copa do Mundo">
+    <div class="hero-collection-panel">
+
+      <div class="hcp-header">
+        <div class="hcp-eyebrow">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          Coleção Exclusiva
+        </div>
+        <div class="hcp-title">
+          <span class="hcp-brazil">Brasil</span>
+          <span class="hcp-cup">Copa do Mundo</span>
+        </div>
+      </div>
+
+      <div class="hcp-images">
+        <!-- Slot principal -->
+        <div class="hcp-slot hcp-slot-main">
+          <img src="../img/brasilherminho.png" alt="Camisa Brasil Herminho Copa do Mundo" loading="lazy" class="hcp-img">
+          <span class="hcp-slot-label">Brasil</span>
+        </div>
+
+        <div class="hcp-slots-row">
+          <!-- Igor Azul -->
+          <div class="hcp-slot">
+            <img src="../img/brasiligorazul.png" alt="Camisa Brasil Ígora Azul Copa do Mundo" loading="lazy" class="hcp-img">
+            <span class="hcp-slot-label">Azul</span>
+          </div>
+          <!-- Amarela -->
+          <div class="hcp-slot">
+            <img src="../img/brasilamarela.png" alt="Camisa Brasil Amarela Copa do Mundo" loading="lazy" class="hcp-img">
+            <span class="hcp-slot-label">Amarela</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#products" class="hcp-cta-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        Ver Coleção Completa
+      </a>
+
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="container">
+    <div class="trust-bar-inner">
+      <div class="trust-item">
+        <div class="trust-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+        <div class="trust-text">
+          <strong>Entrega Rápida</strong>
+          <span>Com total qualidade</span>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="trust-text">
+          <strong>Compra Segura</strong>
+          <span>Site 100% protegido</span>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+        </div>
+        <div class="trust-text">
+          <strong>12x Com Juros</strong>
+          <span>No cartão de crédito</span>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div class="trust-text">
+          <strong>Troca Garantida</strong>
+          <span>7 dias para devolver</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- STATS -->
+<section class="stats-section" aria-label="Nossos números">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card reveal">
+        <div class="stat-number" data-target="2000">0</div>
+        <div class="stat-label">Clientes Satisfeitos</div>
+      </div>
+      <div class="stat-card reveal reveal-delay-1">
+        <div class="stat-number" data-target="150">0</div>
+        <div class="stat-label">Modelos Disponíveis</div>
+      </div>
+      <div class="stat-card reveal reveal-delay-2">
+        <div class="stat-number" data-target="49" data-decimal="true">0</div>
+        <div class="stat-label">Avaliação Média ★</div>
+      </div>
+      <div class="stat-card reveal reveal-delay-3">
+        <div class="stat-number" data-target="48">0</div>
+        <div class="stat-label">Horas p/ Despacho</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products-section" id="products" aria-labelledby="products-title">
+  <div class="container">
+    <div class="section-header reveal">
+      <div>
+        <div class="section-tag">Coleção</div>
+        <h2 class="section-title" id="products-title">Mais Vendidos</h2>
+      </div>
+      <a href="https://www.instagram.com/treefashion16/" target="_blank" rel="noopener" class="btn btn-outline">
+        Ver Todos
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+    <div class="products-grid">
+
+      <!-- Card 1: Inglaterra -->
+      <article class="product-card reveal">
+        <div class="product-img-wrap">
+          <img src="../img/italia.png" alt="Camisa Itália Home 2024" class="product-photo" loading="lazy" width="400" height="300">
+          <span class="product-badge badge-hot">+ Vendida</span>
+          <button class="product-fav" aria-label="Favoritar camisa Itália">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </button>
+        </div>
+        <div class="product-info">
+          <div class="product-team">Seleção Italiana</div>
+          <h3 class="product-name">Camisa Itália Home 2024</h3>
+        </div>
+        <div class="product-footer">
+            <a href="https://wa.me/55" class="product-whatsapp-cta" aria-label="Consultar preço Itália via WhatsApp">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Consultar Preço
+            </a>
+        </div>
+      </article>
+
+      <!-- Card 2: Argentina -->
+      <article class="product-card reveal reveal-delay-1">
+        <div class="product-img-wrap">
+          <img src="../img/argentina.png" alt="Camisa Argentina Home 2024" class="product-photo" loading="lazy" width="400" height="300">
+          <span class="product-badge badge-new">Novo</span>
+          <button class="product-fav" aria-label="Favoritar camisa Argentina">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </button>
+        </div>
+        <div class="product-info">
+          <div class="product-team">Seleção Argentina</div>
+          <h3 class="product-name">Camisa Argentina Home 2026</h3>
+        </div>
+        <div class="product-footer">
+            <a href="https://wa.me/55" class="product-whatsapp-cta" aria-label="Consultar preço Argentina via WhatsApp">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Consultar Preço
+            </a>
+        </div>
+      </article>
+
+      <!-- Card 3: Bélgica -->
+      <article class="product-card reveal reveal-delay-2">
+        <div class="product-img-wrap">
+          <img src="../img/belgica.png" alt="Camisa Bélgica Home 2022" class="product-photo" loading="lazy" width="400" height="300">
+          <span class="product-badge badge-off">Destaque</span>
+          <button class="product-fav" aria-label="Favoritar camisa Bélgica">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </button>
+        </div>
+        <div class="product-info">
+          <div class="product-team">Seleção Belga</div>
+          <h3 class="product-name">Camisa Bélgica Home 2022</h3>
+        </div>
+        <div class="product-footer">
+            <a href="https://wa.me/55" class="product-whatsapp-cta" aria-label="Consultar preço Bélgica via WhatsApp">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Consultar Preço
+            </a>
+        </div>
+      </article>
+
+      <!-- Card 4: Jamaica -->
+      <article class="product-card reveal reveal-delay-1">
+        <div class="product-img-wrap">
+          <img src="../img/jamaica.png" alt="Camisa Jamaica Home" class="product-photo" loading="lazy" width="400" height="300">
+          <span class="product-badge badge-new">Novo</span>
+          <button class="product-fav" aria-label="Favoritar camisa Jamaica">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </button>
+        </div>
+        <div class="product-info">
+          <div class="product-team">Seleção Jamaicana</div>
+          <h3 class="product-name">Camisa Jamaica Home 2024</h3>
+        </div>
+        <div class="product-footer">
+            <a href="https://wa.me/55" class="product-whatsapp-cta" aria-label="Consultar preço Jamaica via WhatsApp">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Consultar Preço
+            </a>
+        </div>
+      </article>
+
+      <!-- Card 5: Portugal -->
+      <article class="product-card reveal reveal-delay-2">
+        <div class="product-img-wrap">
+          <img src="../img/portugal.png" alt="Camisa Portugal Home" class="product-photo" loading="lazy" width="400" height="300">
+          <span class="product-badge badge-last">Últimas</span>
+          <button class="product-fav" aria-label="Favoritar camisa Portugal">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </button>
+        </div>
+        <div class="product-info">
+          <div class="product-team">Seleção Portuguesa</div>
+          <h3 class="product-name">Camisa Portugal Home 2024</h3>
+        </div>
+        <div class="product-footer">
+            <a href="https://wa.me/55" class="product-whatsapp-cta" aria-label="Consultar preço Portugal via WhatsApp">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Consultar Preço
+            </a>
+        </div>
+      </article>
+
+      <!-- Card 6: Barcelona -->
+      <article class="product-card reveal reveal-delay-3">
+        <div class="product-img-wrap">
+          <img src="../img/inglaterra.png" alt="Camisa Inglaterra Home 2024" class="product-photo" loading="lazy" width="400" height="300">
+          <span class="product-badge badge-hot">Top</span>
+          <button class="product-fav" aria-label="Favoritar camisa Inglaterra">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </button>
+        </div>
+        <div class="product-info">
+          <div class="product-team">Seleção Inglesa</div>
+          <h3 class="product-name">Camisa Inglaterra Home 2024</h3>
+        </div>
+        <div class="product-footer">
+            <a href="https://wa.me/55" class="product-whatsapp-cta" aria-label="Consultar preço Inglaterra via WhatsApp">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Consultar Preço
+            </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- URGENCY / SCARCITY -->
+<section class="urgency-section" id="urgency" aria-labelledby="urgency-title">
+  <div class="container">
+    <div class="urgency-inner">
+      <div class="urgency-left reveal">
+        <div class="urgency-label">
+          <span class="blink"></span>
+          Oferta por tempo limitado
+        </div>
+        <h2 class="urgency-title" id="urgency-title">Corra — Estoque<br><span style="color:var(--red)">Acabando!</span></h2>
+        <p class="urgency-sub">Aproveite os descontos exclusivos antes que os modelos esgotem. Não perca a camisa do seu time.</p>
+
+        <div class="countdown-wrap" role="timer" aria-label="Tempo restante da oferta">
+          <div class="countdown-block">
+            <span class="countdown-num" id="cdHours">08</span>
+            <span class="countdown-lbl">Horas</span>
+          </div>
+          <div class="countdown-block">
+            <span class="countdown-num" id="cdMins">47</span>
+            <span class="countdown-lbl">Minutos</span>
+          </div>
+          <div class="countdown-block">
+            <span class="countdown-num" id="cdSecs">23</span>
+            <span class="countdown-lbl">Segundos</span>
+          </div>
+        </div>
+
+        <div class="stock-bar-wrap">
+          <div class="stock-label">
+            <span>Estoque disponível</span>
+            <strong>78% vendido — Restam poucas unidades!</strong>
+          </div>
+          <div class="stock-bar" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" aria-label="78% do estoque vendido">
+            <div class="stock-fill"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="urgency-products reveal reveal-delay-2">
+        <div class="urgency-card">
+          <div class="urgency-card-img">
+            <img src="../img/brasilasul2.png" alt="Camisa Brasil" loading="lazy">
+          </div>
+          <div class="urgency-card-info">
+            <div class="urgency-card-team">Seleção Brasileira</div>
+            <div class="urgency-card-name">Brasil Home 2026</div>
+            <div class="urgency-stock">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+              Apenas 3 unidades
+            </div>
+          </div>
+          <div class="urgency-card-price">APROVEITE A OFERTA</div>
+        </div>
+
+        <div class="urgency-card">
+          <div class="urgency-card-img">
+            <img src="../img/argentina.png" alt="Camisa Argentina" loading="lazy">
+          </div>
+          <div class="urgency-card-info">
+            <div class="urgency-card-team">Seleção Argentina</div>
+            <div class="urgency-card-name">Argentina Home 2024</div>
+            <div class="urgency-stock">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+              Apenas 5 unidades
+            </div>
+          </div>
+          <div class="urgency-card-price">APROVEITE</div>
+        </div>
+
+        <div class="urgency-card">
+          <div class="urgency-card-img">
+            <img src="../img/portugal.png" alt="Camisa Portugal" loading="lazy">
+          </div>
+          <div class="urgency-card-info">
+            <div class="urgency-card-team">Seleção Portuguesa</div>
+            <div class="urgency-card-name">Portugal Home 2024</div>
+            <div class="urgency-stock">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+              Apenas 2 unidades
+            </div>
+          </div>
+          <div class="urgency-card-price">APROVEITE</div>
+        </div>
+      </div>
+
+      <a href="https://wa.me/55" class="btn btn-primary urgency-btn-cta" aria-label="Garantir minha camisa via WhatsApp">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        Garantir Minha Camisa
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why-section" id="about" aria-labelledby="why-title">
+  <div class="container">
+    <div style="text-align:center;" class="reveal">
+      <div class="section-tag">Por que a Tree Fashion?</div>
+      <h2 class="section-title" id="why-title">A Experiência que<br>Você Merece</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal reveal-delay-1">
+        <div class="why-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Qualidade Garantida</h3>
+        <p>Trabalhamos apenas com fornecedores certificados. Cada camisa passa por controle de qualidade antes de chegar até você.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-2">
+        <div class="why-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+        <h3>Entrega Rápida</h3>
+        <p>Entregamos na cidade e em regiões da Bahia. Combinamos tudo e garantimos que sua camisa chega rapidinho.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-3">
+        <div class="why-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        </div>
+        <h3>Atendimento Humano</h3>
+        <p>Nossa equipe responde no WhatsApp em menos de 1 hora. Tire dúvidas sobre tamanhos, modelos e disponibilidade com quem entende.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-1">
+        <div class="why-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+        </div>
+        <h3>Pagamento Facilitado</h3>
+        <p>Aceitamos PIX, cartão de crédito, boleto e débito. Consulte as condições de pagamento diretamente pelo WhatsApp.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-2">
+        <div class="why-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <h3>Troca sem Burocracia</h3>
+        <p>Errou o tamanho? Não se preocupe. Garantimos troca em até 7 dias corridos sem custo adicional para você.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-3">
+        <div class="why-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <h3>+2.000 Fãs Felizes</h3>
+        <p>Avaliação de 4.9 estrelas com mais de 2.000 pedidos entregues. A comunidade Tree Fashion cresce a cada dia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section" id="testimonials" aria-labelledby="testimonials-title">
+  <div class="container">
+    <div style="text-align:center;" class="reveal">
+      <div class="section-tag">Depoimentos</div>
+      <h2 class="section-title" id="testimonials-title">O que Nossos Clientes<br>Estão Dizendo</h2>
+    </div>
+    <div class="testimonials-grid">
+
+      <div class="testimonial-card reveal reveal-delay-1">
+        <div class="stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-text">"Comprei a camisa do Brasil e chegou em 3 dias! Qualidade incrível, tecido leve e o tamanho bateu perfeitamente. Com certeza vou comprar mais. A melhor loja da região"</p>
+        <div class="testimonial-author">
+          <div class="author-av" style="background:linear-gradient(135deg,#16A34A,#064E3B);">JL</div>
+          <div>
+            <div class="author-name">João Lucas S.</div>
+            <div class="author-sub">Salvador, BA</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal reveal-delay-2">
+        <div class="stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-text">"Atendimento nota 10! Fiz uma dúvida no WhatsApp e me responderam na hora. A camisa do Flamengo ficou igual às fotos. Recomendo demais!"</p>
+        <div class="testimonial-author">
+          <div class="author-av" style="background:linear-gradient(135deg,#DC143C,#7F1D1D);">RS</div>
+          <div>
+            <div class="author-name">Rodrigo Santos</div>
+            <div class="author-sub">Alagoinhas, BA</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal reveal-delay-3">
+        <div class="stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-text">"Comprei pra mim e pro meu filho. As duas chegaram bem embaladas e no prazo combinado. Já indiquei pra vários amigos. Loja confiável!"</p>
+        <div class="testimonial-author">
+          <div class="author-av" style="background:linear-gradient(135deg,#D97706,#92400E);">MF</div>
+          <div>
+            <div class="author-name">Mariana F.</div>
+            <div class="author-sub">Alagoinhas, BA</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- INSTAGRAM -->
+<section class="instagram-section" aria-labelledby="ig-title">
+  <div class="container">
+    <div class="ig-header reveal">
+      <div class="section-tag">Instagram</div>
+      <h2 class="section-title" id="ig-title">Siga Nossa Comunidade</h2>
+      <a href="https://www.instagram.com/treefashion16/" target="_blank" rel="noopener" class="ig-handle">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        @treefashion16
+      </a>
+    </div>
+    <div class="ig-grid reveal">
+      <div class="ig-item">
+        <div class="ig-item-bg ig-1"></div>
+        <div class="ig-overlay" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </div>
+      </div>
+      <div class="ig-item">
+        <div class="ig-item-bg ig-2"></div>
+        <div class="ig-overlay" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </div>
+      </div>
+      <div class="ig-item">
+        <div class="ig-item-bg ig-3"></div>
+        <div class="ig-overlay" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </div>
+      </div>
+      <div class="ig-item">
+        <div class="ig-item-bg ig-4"></div>
+        <div class="ig-overlay" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </div>
+      </div>
+      <div class="ig-item">
+        <div class="ig-item-bg ig-5"></div>
+        <div class="ig-overlay" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </div>
+      </div>
+      <div class="ig-item">
+        <div class="ig-item-bg ig-6"></div>
+        <div class="ig-overlay" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </div>
+      </div>
+    </div>
+    <div class="ig-cta-wrap reveal">
+      <a href="https://www.instagram.com/treefashion16/" target="_blank" rel="noopener" class="btn btn-outline">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        Ver mais no Instagram
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA / NEWSLETTER -->
+<section class="cta-section" aria-labelledby="cta-title">
+  <div class="container">
+    <div class="cta-inner reveal">
+      <div class="section-tag">Fique por dentro</div>
+      <h2 class="cta-title" id="cta-title">Receba os <span>Lançamentos</span><br>em Primeira Mão</h2>
+      <p class="cta-sub">Cadastre seu e-mail e fique por dentro de novos modelos, edições limitadas e promoções exclusivas.</p>
+      <form class="form-row" onsubmit="handleSubscribe(event)" novalidate>
+        <label for="emailInput" class="sr-only">Seu melhor e-mail</label>
+        <input type="email" id="emailInput" class="form-input" placeholder="Seu melhor e-mail" required autocomplete="email">
+        <button type="submit" class="btn btn-primary">Quero Receber</button>
+      </form>
+      <p class="form-disclaimer">Sem spam. Cancele quando quiser. Seus dados estão protegidos.</p>
+      <div class="cta-divider">ou fale diretamente</div>
+      <a href="https://wa.me/55" class="whatsapp-btn" aria-label="Falar no WhatsApp">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Chamar no WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" aria-label="Rodapé">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="../img/logo.png" alt="Tree Fashion" class="footer-logo">
+        <p><strong>Sua loja especializada em camisas de futebol dos clubes e seleções que você ama. Qualidade, estilo e paixão pelo futebol em cada entrega.</strong></p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/treefashion16/" target="_blank" rel="noopener" aria-label="Instagram Tree Fashion">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://wa.me/55" aria-label="WhatsApp Tree Fashion">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Loja</h4>
+          <ul>
+            <li><a href="#products">Seleções Nacionais</a></li>
+            <li><a href="#products">Clubes Brasileiros</a></li>
+            <li><a href="#products">Clubes Europeus</a></li>
+            <li><a href="#urgency">Promoções</a></li>
+            <li><a href="#products">Lançamentos</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Suporte</h4>
+          <ul>
+            <li><a href="https://wa.me/55">Falar no WhatsApp</a></li>
+            <li><a href="https://wa.me/55">Consultar Pedido</a></li>
+            <li><a href="#">Política de Troca</a></li>
+            <li><a href="#">Guia de Tamanhos</a></li>
+            <li><a href="#">Perguntas Frequentes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Institucional</h4>
+          <ul>
+            <li><a href="#about">Sobre Nós</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Termos de Uso</a></li>
+            <li><a href="https://www.instagram.com/treefashion16/" target="_blank" rel="noopener">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Tree Fashion. Todos os direitos reservados.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ======================================================
+     JAVASCRIPT
+======================================================= -->
+<script src="../js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+/* =============================================
+   INSTAGRAM — MOBILE FIRST
+   Base = 2 colunas. 3 -> 6 via _responsive.
+   ============================================= */
+
+.instagram-section {
+  padding: clamp(48px, 8vw, 96px) 0;
+  background: var(--bg);
+}
+
+.ig-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  margin-bottom: clamp(20px, 4vw, 48px);
+}
+
+.ig-handle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: .82rem;
+  font-weight: 600;
+  color: var(--gray-2);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 8px 18px;
+  transition: var(--trans);
+}
+.ig-handle:hover {
+  color: var(--white);
+  border-color: var(--gold);
+  background: rgba(217, 119, 6, .06);
+}
+
+/* Mobile: 2 colunas */
+.ig-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.ig-item {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.ig-item-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform .4s ease;
+}
+.ig-item:hover .ig-item-bg { transform: scale(1.08); }
+
+/* Gradientes placeholder */
+.ig-1 { background: linear-gradient(135deg, #16A34A, #064E3B); }
+.ig-2 { background: linear-gradient(135deg, #D97706, #92400E); }
+.ig-3 { background: linear-gradient(135deg, #1D4ED8, #1E3A8A); }
+.ig-4 { background: linear-gradient(135deg, #DC2626, #7F1D1D); }
+.ig-5 { background: linear-gradient(135deg, #16A34A, #1D4ED8); }
+.ig-6 { background: linear-gradient(135deg, #D97706, #DC2626); }
+
+.ig-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, .45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  opacity: 0;
+  transition: opacity .25s ease;
+}
+.ig-item:hover .ig-overlay { opacity: 1; }
+
+.ig-cta-wrap {
+  text-align: center;
+  margin-top: 28px;
+}
+
+@media (min-width: 1025px) {
+  .ig-grid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 6px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+  }
+  .ig-item {
+    aspect-ratio: unset;
+    height: 160px;
+  }
+}

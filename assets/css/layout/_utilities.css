@@ -1,0 +1,108 @@
+/* =============================================
+   UTILITIES & COMPONENTES GLOBAIS
+   Classes reutilizáveis em toda a aplicação:
+   container, botões, tags de seção, cabeçalhos.
+   ============================================= */
+
+/* Container central */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(12px, 4vw, 24px);
+}
+
+/* Tag de categoria de seção (ex: "Coleção", "Depoimentos") */
+.section-tag {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: var(--green-light);
+  background: rgba(22, 163, 74, .12);
+  border: 1px solid rgba(34, 197, 94, .25);
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 16px;
+}
+
+/* Cabeçalho de seção (título + ação) */
+.section-header {
+  display: flex;
+  flex-direction: column; /* mobile: coluna */
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.section-title {
+  font-family: var(--font-head);
+  font-size: clamp(1.45rem, 6vw, 2.8rem);
+  line-height: 1.1;
+}
+
+/* ---- Botões ---- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  padding: 14px 30px;
+  border-radius: var(--radius);
+  border: none;
+  transition: var(--trans);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: var(--gold);
+  color: #000;
+}
+.btn-primary:hover {
+  background: var(--gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(217, 119, 6, .4);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--white);
+  border: 1.5px solid var(--border);
+}
+.btn-outline:hover {
+  border-color: var(--white);
+  background: rgba(255, 255, 255, .05);
+}
+
+.btn-green {
+  background: var(--green);
+  color: var(--white);
+}
+.btn-green:hover {
+  background: var(--green-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(22, 163, 74, .4);
+}
+
+/* Classe de acessibilidade — visualmente oculto, acessível a leitores de tela */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

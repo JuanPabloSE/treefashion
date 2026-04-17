@@ -1,0 +1,43 @@
+/* =============================================
+   STATS — MOBILE FIRST
+   Base = 2x2. Desktop 4 colunas via _responsive.
+   ============================================= */
+
+.stats-section {
+  padding: 0;
+  background: var(--bg);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* mobile: 2x2 */
+  gap: 2px;
+  background: var(--border);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.stat-card {
+  background: var(--surface);
+  padding: clamp(24px, 4vw, 48px) clamp(12px, 2.6vw, 32px);
+  text-align: center;
+  transition: background .2s ease;
+}
+.stat-card:hover { background: var(--surface2); }
+
+.stat-number {
+  font-family: var(--font-head);
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  color: var(--green-light);
+  line-height: 1;
+  margin-bottom: 8px;
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-label {
+  font-size: .7rem;
+  color: var(--gray-2);
+  font-weight: 500;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
