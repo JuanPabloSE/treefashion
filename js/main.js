@@ -1,4 +1,30 @@
 // =============================================
+// CONFIG — URLs externas centralizadas
+// =============================================
+const EXTERNAL_LINKS = {
+  whatsapp: 'https://wa.me/55',
+  instagram: 'https://www.instagram.com/treefashion16/',
+};
+
+// =============================================
+// LINKS EXTERNOS — WhatsApp e Instagram
+// Abre sempre em nova aba, sem vazar referrer
+// =============================================
+function openExternal(url) {
+  window.open(url, '_blank', 'noopener,noreferrer');
+}
+
+document.querySelectorAll('[data-action]').forEach(el => {
+  el.addEventListener('click', function(e) {
+    e.preventDefault();
+    const action = this.dataset.action;
+    if (EXTERNAL_LINKS[action]) {
+      openExternal(EXTERNAL_LINKS[action]);
+    }
+  });
+});
+
+// =============================================
 // MOBILE MENU
 // =============================================
 const hamburger = document.getElementById('hamburger');
@@ -135,21 +161,6 @@ document.querySelectorAll('.product-fav').forEach(btn => {
       this.style.background = '';
       this.style.borderColor = '';
     }
-  });
-});
-
-// =============================================
-// ADD TO CART FEEDBACK
-// =============================================
-document.querySelectorAll('.product-add').forEach(btn => {
-  btn.addEventListener('click', function() {
-    const orig = this.innerHTML;
-    this.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>';
-    this.style.background = 'var(--gold)';
-    setTimeout(() => {
-      this.innerHTML = orig;
-      this.style.background = '';
-    }, 1200);
   });
 });
 
