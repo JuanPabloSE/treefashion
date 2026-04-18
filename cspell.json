@@ -4,6 +4,7 @@
   "ignorePaths": [
     "node_modules",
     "assets/css",
+    "html",
     "img",
     "*.min.js"
   ],

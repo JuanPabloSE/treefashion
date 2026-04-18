@@ -16,9 +16,19 @@ document.addEventListener('click', function (e) {
 
   const action = el.dataset.action;
 
-  if (action === 'whatsapp' || action === 'instagram') {
+  if (action === 'whatsapp') {
     e.preventDefault();
-    openExternal(CONFIG[action]);
+    const msg = el.dataset.msg;
+    const url = msg
+      ? `${CONFIG.whatsapp}?text=${encodeURIComponent(msg)}`
+      : CONFIG.whatsapp;
+    openExternal(url);
+    return;
+  }
+
+  if (action === 'instagram') {
+    e.preventDefault();
+    openExternal(CONFIG.instagram);
     return;
   }
 
@@ -138,28 +148,6 @@ function animateCounter(el) {
 
   tick();
 })();
-
-// =============================================
-// NEWSLETTER FORM
-// =============================================
-function handleSubscribe(e) {
-  e.preventDefault();
-  const input = document.getElementById('emailInput');
-  const btn   = e.target.querySelector('button[type="submit"]');
-
-  if (!input.value || !input.value.includes('@')) {
-    input.style.borderColor = '#DC2626';
-    input.focus();
-    return;
-  }
-
-  input.style.borderColor = '';
-  btn.textContent          = '✓ Enviado!';
-  btn.style.background     = 'var(--green)';
-  btn.style.color          = '#fff';
-  btn.disabled             = true;
-  input.value              = '';
-}
 
 // =============================================
 // FAVORITE BUTTONS (toggle)
