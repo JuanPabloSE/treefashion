@@ -3,7 +3,7 @@
 // To update WhatsApp or Instagram, edit here.
 // =============================================
 const CONFIG = {
-  whatsapp:  'https://wa.me/55',
+  whatsapp:  'https://wa.me/557591058887',
   instagram: 'https://www.instagram.com/treefashion16/',
 };
 
