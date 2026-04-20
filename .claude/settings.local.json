@@ -21,7 +21,12 @@
       "Bash(python3 scripts/search.py \"fashion ecommerce sports jersey dark luxury\" --design-system -p \"TreeFashion\" -f markdown)",
       "Bash(python \"C:\\\\Users\\\\juanj\\\\.claude\\\\plugins\\\\cache\\\\ui-ux-pro-max-skill\\\\ui-ux-pro-max\\\\2.5.0\\\\.claude\\\\skills\\\\ui-ux-pro-max\\\\scripts\\\\search.py\" \"fashion ecommerce sports jersey dark luxury\" --design-system -p \"TreeFashion\" -f markdown)",
       "Bash(python \"C:\\\\Users\\\\juanj\\\\.claude\\\\plugins\\\\cache\\\\ui-ux-pro-max-skill\\\\ui-ux-pro-max\\\\2.5.0\\\\src\\\\ui-ux-pro-max\\\\scripts\\\\search.py\" \"fashion ecommerce sports jersey dark luxury\" --design-system -p \"TreeFashion\" -f markdown)",
-      "Bash(node -e ':*)"
+      "Bash(node -e ':*)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git pull *)",
+      "Bash(git stash *)",
+      "Bash(git push *)"
     ]
   }
 }
