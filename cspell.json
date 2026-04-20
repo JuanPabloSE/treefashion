@@ -6,6 +6,7 @@
     "assets/css",
     "html",
     "img",
+    "*.html",
     "*.min.js"
   ],
   "words": [
